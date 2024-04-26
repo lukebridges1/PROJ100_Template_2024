@@ -103,13 +103,18 @@
 #define Aa6   1760 //A
 #define A6s  1865 //A#
 #define B6   1976 //B
+#define C4 262
+#define G3 196
+#define G4 392
+#define F4 349
+#define E4 330
 
 
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
-void Tune(PwmOut name, int period, int beat);
-void Auto_tunes(PwmOut name, int period, int beat);
-void Stop_tunes(PwmOut name);
+void Tune(PwmOut& name, int period, int beat);
+void Auto_tunes(PwmOut& name, int period, int beat);
+void Stop_tunes(PwmOut& name);
         
 /* Private functions ---------------------------------------------------------*/
 
