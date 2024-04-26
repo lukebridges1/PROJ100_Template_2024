@@ -56,14 +56,101 @@ int main ()
     /*************************************************/
 
     // simple_test();
-    speed_test();
+    //speed_test();
 
     while(true){
 
         // Write the parts of your code which should run in a loop between here..
-
-
-
+        Wheel.Speed(1, 1);
+        wait_us(8928*1000);// forward 1 m 
+        
+        Wheel.Stop();
+        
+        wait_us(2000*1000); // to allow for use in the 1m straight line task 
+        
+        Wheel.Speed(1, -1);
+        wait_us(2000*1000); // turn 180 deg to the right 
+        
+        Wheel.Stop();
+        wait_us(1000); // stopping the wheel for a small amount of time to allow for a smoother transition 
+        
+        Wheel.Speed(1, 1);
+        wait_us(8928*1000); // going back 1m in a straight line 
+        
+        Wheel.Speed(-1, 1);
+        wait_us(2000*1000); // turning 180 deg to the left 
+        
+        Wheel.Stop(); // stopping the wheels completely 
+        starwars(5); // playing the starwars imperial march theme tune 
+        wait_us(1000); // extra wait time for the code to finish 
+        
+        wait_us(5000*1000); // used to stop the code from running again before the chance to grab 
+          
+    /* Wheel.Speed(1, 1);
+        wait_us(2000*1000);
+        
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(1000*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(1000*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(750*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(750*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(500*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(500*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(400*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(400*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(300*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(300*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(200*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(200*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(100*1000);
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(100*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(200*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(200*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(100*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(100*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(200*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(200*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(100*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(100*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(200*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(200*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(100*1000); 
+         Wheel.Speed(0.4,-0.9); 
+        wait_us(100*1000); 
+        Wheel.Speed(-0.9,0.4); 
+        wait_us(200*1000); 
+        Wheel.Speed(0.4,-0.9); 
+        wait_us(200*1000); 
+       Wheel.Speed(-0.9,0.4); 
+       wait_us(100*1000); 
+       Wheel.Speed(0.4,-0.9); 
+        wait_us(100*1000); 
+        starwars(5);
+        wait_us(1000);  */
 
         // ..and here
 
