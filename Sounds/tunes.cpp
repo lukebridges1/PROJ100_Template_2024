@@ -79,3 +79,26 @@ void twinkle(int s){
     Tune(buzzer,1e6/C4,s*4);
     buzzer.period_ms(TIME_PERIOD);
   }
+void starwars(int s){
+    Tune(buzzer, 1e6/G4, s*2); // G4
+    Tune(buzzer, 1e6/G4, s*2); // G4
+    Tune(buzzer, 1e6/G4, s*2); // G4
+    Tune(buzzer, 1e6/D4s, s*1); // D#4
+    Tune(buzzer, 1e6/A4s, s*1); // A#4
+
+    Tune(buzzer, 1e6/G4, s*2); // G4
+    Tune(buzzer, 1e6/D4s, s*1); // D#4
+    Tune(buzzer, 1e6/Aa4, s*1); // A#4
+    Tune(buzzer, 1e6/G4, s*4); // G4
+
+    Tune(buzzer, 1e6/D5, s*2); // D5
+    Tune(buzzer, 1e6/D5, s*2); // D5
+    Tune(buzzer, 1e6/D5, s*2); // D5
+    Tune(buzzer, 1e6/D5s, s*1); // D#5
+    Tune(buzzer, 1e6/Aa4, s*1); // A#4
+
+    Tune(buzzer, 1e6/F4s, s*2); // F#4
+    Tune(buzzer, 1e6/D4s, s*1); // D#4
+    Tune(buzzer, 1e6/Aa4, s*1); // A#4
+    Tune(buzzer, 1e6/G4, s*4); // G4
+}
